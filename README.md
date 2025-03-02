@@ -8,7 +8,7 @@ You need a live server extension in VSCode [(for example what I'm using)](https:
 Of course, I wanna credit the people over Bittoco to actually make the player, I just wanted to make my own version of the player and let the public actually use it for their revivals
 
 # COLORS
-Here are the following colors you can change to (in line 96)
+Here are the following colors you can change to [(in line 85)](https://github.com/MrHalfLife280/2010-YouTube-Player/blob/main/index.html#L85)
 # Basic Colors
 
 * red

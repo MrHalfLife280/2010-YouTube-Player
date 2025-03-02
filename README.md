@@ -2,7 +2,7 @@
 2010 YouTube Player, taken from BitView and Mr Half-Life'd
 
 # Run the server locally
-You need a live server extension in VSCode [(for example what I'm using)]([URL](https://open-vsx.org/vscode/item?itemName=ritwickdey.LiveServer)) but I haven't actually tested deploying it
+You need a live server extension in VSCode [(for example what I'm using)](https://open-vsx.org/vscode/item?itemName=ritwickdey.LiveServer) but I haven't actually tested deploying it
 
 # Credits
 Of course, I wanna credit the people over Bittoco to actually make the player, I just wanted to make my own version of the player and let the public actually use it for their revivals

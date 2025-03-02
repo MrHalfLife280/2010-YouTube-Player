@@ -27,6 +27,7 @@ Here are the following colors you can change to [(in line 85)](https://github.co
 * gray
   
 # Shades & Variations
+
 * lightblue
 * darkblue
 * lightgreen
@@ -37,7 +38,6 @@ Here are the following colors you can change to [(in line 85)](https://github.co
 * magenta
 * navy
 * maroon
-
 * lime
 * teal (which is what BitView uses)
 * indigo

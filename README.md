@@ -19,7 +19,7 @@ Here are the following colors you can change to (in line 96)
 * black
 * white
 * gray
-* 
+  
 # Shades & Variations
 * lightblue
 * darkblue

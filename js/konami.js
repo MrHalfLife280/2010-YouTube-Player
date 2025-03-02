@@ -1,0 +1,3 @@
+const konamiCode=["ArrowUp","ArrowUp","ArrowDown","ArrowDown","ArrowLeft","ArrowRight","ArrowLeft","ArrowRight","b","a","Enter"];let konamiCodeIndex=0;function changeFontToComicSans(){document.body.style.fontFamily="Comic Sans MS, cursive";}
+function handleKonamiCode(event){const keyPressed=event.key;const expectedKey=konamiCode[konamiCodeIndex];if(keyPressed===expectedKey){konamiCodeIndex++;if(konamiCodeIndex===konamiCode.length){changeFontToComicSans();konamiCodeIndex=0;}}else{konamiCodeIndex=0;}}
+document.addEventListener("keydown",handleKonamiCode);

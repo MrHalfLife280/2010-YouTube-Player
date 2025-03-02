@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLPlayer</title>
+    <link href="/css/main.css?3" rel="stylesheet" type="text/css" />
+    <script src="/player/main19.js"></script>
+    <script src="/player/jquery.js"></script>
+</head>
+<body>
+    <!-- begin of 2010 player -->
+    <div id="content" class="">
+        <!-- begin contenttop section -->
+    <div id="watch-headline-container">
+            <div id="watch-headline">
+
+    <h1 id="watch-headline-title">
+        <span title="BitView in 3D">
+            BitView in 3D            </span>
+    </h1>
+    <div id="watch-headline-user-info">
+                        <a id="watch-username" class="inline-block" href="/user/EvoLutionEvoTV"><strong>EvoLutionEvoTV</strong></a>
+                    <span id="watch-video-count" class="watch-expander yt-uix-expander yt-uix-expander-collapsed" onclick="moreFrom(this);">
+            <span class="watch-expander-head yt-uix-expander-head yt-rounded">
+                                        <button class="yt-uix-expander-arrow" onclick="return false;"></button>5 videos                                    </span>
+        </span>
+                        <button id="subscribeDiv" class="yt-uix-button yt-uix-tooltip" title="Click to be notified of new videos from this channel" onmouseover="showTooltip(this);" onmouseout="hideTooltip();" href="javascript:void(0)" onclick="subscribe()" type="button"><span class="yt-uix-button-content">Subscribe</span></button>
+                </div>
+    <div id="watch-more-from-user" class="collapsed">
+        <div id="watch-channel-discoverbox" class="yt-rounded">
+            <span id="watch-channel-loading">Loading...</span>
+        </div>
+    </div>
+
+</div>
+
+</div>
+<!-- end contenttop section -->
+<div id="watch-video-container">
+    <div id="watch-video" class=" ">
+        <div id="watch-player" style="background: transparent; z-index: 1000;">
+                                    <!--<div style="width:640px;height:360px" class="videocontainer" id="video_height" oncontextmenu="return false;">-->
+        <script type="text/javascript">function v_play(){player.ended||player.paused?(player.play(),document.getElementById("left").style.backgroundImage="url('/img/ply0.png')"):(player.pause(),document.getElementById("left").style.backgroundImage="url('/img/ply1.png')")}function v_mute(){player.muted?(document.getElementById("right").style.backgroundImage="url('/img/vol1.png')",player.muted=!1):(document.getElementById("right").style.backgroundImage="url('/img/vol0.png')",player.muted=!0)}</script>
+                    <script src="/player/main19.js?33"></script>
+            <script src="/player/jquery.js?23"></script>
+            <script id="heightAdjust">
+                    if (!window.videoInfo)
+                        var videoInfo = {};
+
+                    function adjustHeight(n) {
+                        var height;
+                        var par = $("#heightAdjust").parent();
+                        if (par[0].style.height) {
+                            height = par.height();
+                            par.height(height + n);
+                        }
+                    }
+
+                    // Easier way of setting cookies
+                    function setCookie(name, value) {
+                        var CookieDate = new Date;
+                        CookieDate.setFullYear(CookieDate.getFullYear() + 10);
+                        document.cookie = name + '=' + value + '; expires=' + CookieDate.toGMTString() + '; path=/';
+                    }
+
+                    // Easier way of getting cookies
+                    function getCookie(cname) {
+                        var name = cname + "=";
+                        var decodedCookie = decodeURIComponent(document.cookie);
+                        var ca = decodedCookie.split(';');
+                        for (var i = 0; i < ca.length; i++) {
+                            var c = ca[i];
+                            while (c.charAt(0) == ' ') {
+                                c = c.substring(1);
+                            }
+                            if (c.indexOf(name) == 0) {
+                                return c.substring(name.length, c.length);
+                            }
+                        }
+                        return "";
+                    }
+
+                    function getTimeHash() {
+                        var h = 0;
+                        var st = 0;
+
+                        if ((h = window.location.href.indexOf("#t=")) >= 0) {
+                            st = window.location.href.substr(h + 3);
+                            return parseInt(st);
+                        }
+
+                        return 0;
+                    }
+
+                    var vlpColors = "orange,white"; vlpColors = vlpColors.split(",");
+
+                    var viValues = {
+                        variable: "vlp",
+                        src: "videos/QlpoU3ZzFyi6deFWeKO2.mp4",
+                        hdsrc: "videos/QlpoU3ZzFyi6deFWeKO2.720.mp4",
+                        img: "/u/thmp/01l5tfDSjGo.jpg",
+                        url: "01l5tfDSjGo",
+                        duration: 21,
+                        autoplay: true,
+                        skin: "2010",
+                        btcolor: vlpColors[0],
+                        bgcolor: vlpColors[1],
+                        adjust: true,
+                        start: getTimeHash()
+                    };
+
+                    for (var i in viValues) {
+                        if (videoInfo[i] === void (0)) {
+                            videoInfo[i] = viValues[i];
+                        }
+                    }
+                    </script>
+                    <!-- BitView HTML5/Flash Player - vistafan12 was here -->
+                    <div class="vlPlayer">
+                        <script>
+                        var video_url = '01l5tfDSjGo';
+                        var annotations = false;
+                        /* Languages for tooltips */
+                        var fullscreen_text = "Full screen";
+                        var expand_text = "Expand";
+                        var shrink_text = "Shrink";
+                        var popout_text = "Pop out";
+                        var mute_text = "Mute";
+                        var unmute_text = "Unmute";
+                        window[videoInfo.variable] = new VLPlayer({
+                            id: videoInfo.id,
+                            src: videoInfo.src,
+                            hdsrc: null,
+                            preview: videoInfo.img,
+                            videoUrl: "/watch.php?v=" + videoInfo.url,
+                            duration: videoInfo.duration,
+                            autoplay: videoInfo.autoplay,
+                            skin: "/player/skins/" + videoInfo.skin,
+                            adjust: videoInfo.adjust,
+                            btcolor: videoInfo.btcolor,
+                            bgcolor: videoInfo.bgcolor,
+                            start: videoInfo.start,
+                            expand: 1,
+                            annotations: false,
+                            complete: videoInfo.complete,
+                            ended: videoInfo.ended
+                        });
+
+                        $(window).on('hashchange', function() {
+                            var t = getTimeHash();
+                            vlp.play();
+                            vlp.seek(t);
+                            $(window).scrollTop(0);
+                        });
+                        </script>
+                        <script src="/player/annotations.js?22"></script>
+                    </div>
+</body>
+</html>

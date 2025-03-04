@@ -1,6 +1,8 @@
 # 2010 YouTube Player
 2010 YouTube Player, taken from BitView and Mr Half-Life'd
 
+![A Screenshot of the 2010 Player](https://raw.githubusercontent.com/MrHalfLife280/2010-YouTube-Player/refs/heads/main/img-github/Screenshot.png)
+
 # Run the server locally
 You need a live server extension in VSCode [(for example what I'm using)](https://open-vsx.org/vscode/item?itemName=ritwickdey.LiveServer) but I haven't actually tested deploying it on web hosting providers
 
